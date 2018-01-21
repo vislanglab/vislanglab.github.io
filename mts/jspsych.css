@@ -99,7 +99,7 @@ button:hover {
 .jspsych-display-element {
     width: auto;
     height: auto;
-    margin: auto auto;
+    margin: auto auto auto auto;
 }
 
 /*
