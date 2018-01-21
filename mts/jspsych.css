@@ -97,7 +97,7 @@ button:hover {
 
 
 .jspsych-display-element {
-    max-height: 90%;
+    max-height: auto;
     width: auto;
     margin: 0 auto 0 auto;
 }
