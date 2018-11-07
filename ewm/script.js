@@ -9,6 +9,7 @@
 	//var instructions = "You will now see a screen with a sentence. After you press a button, you will then see a screen with a sequence of emoji. For the emoji sequence, press Yes (1) or No (0) to indicate if the emoji sequence effectively conveys the information in the sentence. Go with your first instinct. Please press the space bar when you're ready."
 	// To make it prettier, define it within html
 	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
+	"<p>On your keyboard, place your left index finger on the 1, and your right index finger on the 0.</p>"+
 	"<p>You will see a screen with a word or sentence and can press 1 or 0 to advance.</p>"+
 	"<p>You will then see a screen with emoji. Here, press Yes (1) or No (0) to indicate if the emoji effectively conveys the information in the prior words.</p>"+
 	"<p>Go with your first instinct.</p>"+
