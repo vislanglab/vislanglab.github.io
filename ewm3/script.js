@@ -19,7 +19,7 @@
 	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><p>Get ready for the next one!</p></div></main>"
 	
 //CHANGE THE ISI DURATIONS HERE
-	var getReadyDuration = 1000
+	var getReadyDuration = 1500
 
 //TO CHANGE THE SEQUENCE OF EVENTS IN A TRIAL...
 	//head down to line 110 where the inner loop template starts
@@ -35,7 +35,7 @@
 	// choose one of the sets at random
 	var DataSource = AllDataSources[Math.floor(Math.random()*AllDataSources.length)];
 
-	var n_trials = 50;//DataSource.length; //length of array gives number of sequences
+	var n_trials = 24;//DataSource.length; //length of array gives number of sequences
 
 	// LAB.JS loop will handle randomisation, but need to transform the DataSource into an object for the trial list
 	// i.e., loop through the data source, adding each item to named properties
