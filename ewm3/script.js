@@ -41,7 +41,7 @@
 	// i.e., loop through the data source, adding each item to named properties
 
 		//this is the list of parameters that we are going to end up with for every "trial" sequence
-		trialProps=["list","scenario","condition","CondType","TextType","ScenarioName","Sentence","Emoji",];
+		trialProps=["list","scenario","condition","CondType","TextType","ScenarioName","Sentence","Emoji"];
 
 		trials=[];
 		for (index = 0; index < n_trials; index++) {
