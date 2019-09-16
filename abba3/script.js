@@ -18,7 +18,7 @@
 	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><p>Get ready for the next strip!</p></div></main>"
 	
 //CHANGE THE ISI DURATIONS HERE
-	var getReadyDuration = 500
+	var getReadyDuration = 2000
 
 //TO CHANGE THE SEQUENCE OF EVENTS IN A TRIAL...
 	//head down to line 110 where the inner loop template starts
@@ -211,7 +211,7 @@ const study = lab.util.fromObject({
 				"keypress(7)": "7",                 
             },
             "title": "Question", //tells us which panel we are using
-            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "Question.bmp" +"'></div></main>" 
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "question.bmp" +"'></div></main>" 
           },                                                   
         ]
       } 
