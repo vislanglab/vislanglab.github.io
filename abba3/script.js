@@ -6,26 +6,25 @@
 //NOTES ON CHANGING!
 
 //TO CHANGE THE INSTRUCTION TEXT edit this
-	//var instructions = "You will now see a screen with a sentence. After you press a button, you will then see a screen with a sequence of emoji. For the emoji sequence, press Yes (1) or No (0) to indicate if the emoji sequence effectively conveys the information in the sentence. Go with your first instinct. Please press the space bar when you're ready."
+	//var instructions = "You will now see a set of short comic strips like the ones you might see in a newspaper. Your job is simply to read them and try to understand the story. You will see each panel one at a time. When you've read each panel, press SPACE to continue. At the end of each strip we'll ask you how easy it was to understand the story. Please press the space bar when you're ready."
 	// To make it prettier, define it within html
 	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
-	"<p>On your keyboard, place your left index finger on the 1, and your right index finger on the 0.</p>"+
-	"<p>You will see a screen with a sentence and can press 1 or 0 to advance.</p>"+
-	"<p>You will then see a screen with a sequence of emoji. Here, press Yes (1) or No (0) to indicate if the emoji sequence effectively conveys the information in the prior sentence.</p>"+
-	"<p>Go with your first instinct.</p>"+
+	"<p>You will now see a set of short comic strips like the ones you might see in a newspaper.</p>"+
+	"<p>You will see each panel one at a time. When you've read each panel, press SPACE to continue.</p>"+
+	"<p>At the end of each strip we'll ask you how easy it was to understand the story.</p>"+
 	"<p>Please press SPACE when you're ready (you may need to click here with the mouse first!)</p>"+
 	"</div></main>"
 	//define the get ready text, not currently used because set further down
-	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><p>Get ready for the next one!</p></div></main>"
+	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><p>Get ready for the next strip!</p></div></main>"
 	
 //CHANGE THE ISI DURATIONS HERE
-	var getReadyDuration = 1500
+	var getReadyDuration = 500
 
 //TO CHANGE THE SEQUENCE OF EVENTS IN A TRIAL...
 	//head down to line 110 where the inner loop template starts
 
 //TO CHANGE THE SOURCE IMAGES ETC
-	//var URL_stem = "https://vislanglab.github.io/ewo/img/"; //location of the stimuli, URL or...
+	//var URL_stem = "https://vislanglab.github.io/abba3/img/"; //location of the stimuli, URL or...
 	var URL_stem = "img/"; //location of the stimuli, relative path to this file
 
 	//Deal with counterbalancing etc and re-configure so that we can use in lab.js template
@@ -35,13 +34,13 @@
 	// choose one of the sets at random
 	var DataSource = AllDataSources[Math.floor(Math.random()*AllDataSources.length)];
 
-	var n_trials = 60;//DataSource.length; //length of array gives number of sequences
+	var n_trials = 32;//DataSource.length; //length of array gives number of sequences
 
 	// LAB.JS loop will handle randomisation, but need to transform the DataSource into an object for the trial list
 	// i.e., loop through the data source, adding each item to named properties
 
 		//this is the list of parameters that we are going to end up with for every "trial" sequence
-		trialProps=["list","scenario","condition","CondPattern","SentenceType","EmojiType","SentenceText","Sentence","Emoji",];
+		trialProps=["list","strip","conditionPattern","Condition","panel1","panel2","panel3","panel4","panel5","panel6","panel7","panel8"];
 
 		trials=[];
 		for (index = 0; index < n_trials; index++) {
@@ -58,7 +57,7 @@
 // a handler function will run every time the screen is prepared to update this
 	var trialIndex = 0
 	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
-	"<p>Get ready for the next one!</p>"+
+	"<p>Get ready for the next strip!</p>"+
 	"<p>This is trial " + trialIndex + " of "+n_trials+"</p>"+
 	"</div></main>"
 	
@@ -81,7 +80,7 @@ const study = lab.util.fromObject({
     }
   ],
   "metadata": { //strings describing the study
-    "title": "Emoji Word Order",
+    "title": "ABBA3",
     "description": "",
     "repository": "",
     "contributors": ""
@@ -123,7 +122,7 @@ const study = lab.util.fromObject({
             "messageHandlers": {"before:prepare": function anonymous(){ //this is a function which will
 					trialIndex = trialIndex+1;
 					getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
-				"<p>Get ready for the next one!</p>"+
+				"<p>Get ready for the next strip!</p>"+
 				"<p>This is trial " + trialIndex + " of "+n_trials+"</p>"+
 				"</div></main>"
 					this.parameters.getReadyText = getReadyText
@@ -138,21 +137,82 @@ const study = lab.util.fromObject({
           {
             "type": "lab.html.Screen", //a screen presenting our stimulus
             "responses": {
-              "keypress(1)": "1",
-              "keypress(0)": "0",
+              "keypress(Space)": "continue"
             },
-            "title": "sentence", //tells us which panel we are using
-            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.Sentence}" +"'></div></main>" 
+            "title": "panel1", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel1}" +"'></div></main>" 
           },
           {
             "type": "lab.html.Screen", //a screen presenting our stimulus
             "responses": {
-              "keypress(1)": "1",
-              "keypress(0)": "0",
+              "keypress(Space)": "continue"
             },
-            "title": "Emoji", //tells us which panel we are using
-            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.Emoji}" +"'></div></main>" 
-          },                                                                                      
+            "title": "panel2", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel2}" +"'></div></main>" 
+          },     
+          {
+            "type": "lab.html.Screen", //a screen presenting our stimulus
+            "responses": {
+              "keypress(Space)": "continue"
+            },
+            "title": "panel3", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel3}" +"'></div></main>" 
+          },
+          {
+            "type": "lab.html.Screen", //a screen presenting our stimulus
+            "responses": {
+              "keypress(Space)": "continue"
+            },
+            "title": "panel4", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel4}" +"'></div></main>" 
+          },
+          {
+            "type": "lab.html.Screen", //a screen presenting our stimulus
+            "responses": {
+              "keypress(Space)": "continue"
+            },
+            "title": "panel5", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel5}" +"'></div></main>" 
+          },
+          {
+            "type": "lab.html.Screen", //a screen presenting our stimulus
+            "responses": {
+              "keypress(Space)": "continue"
+            },
+            "title": "panel6", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel6}" +"'></div></main>" 
+          },
+	{
+            "type": "lab.html.Screen", //a screen presenting our stimulus
+            "responses": {
+              "keypress(Space)": "continue"
+            },
+            "title": "panel7", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel7}" +"'></div></main>" 
+          }, 
+
+	{
+            "type": "lab.html.Screen", //a screen presenting our stimulus
+            "responses": {
+              "keypress(Space)": "continue"
+            },
+            "title": "panel8", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel8}" +"'></div></main>" 
+          },        
+          {
+            "type": "lab.html.Screen", //a screen presenting the question at the end
+            "responses": {
+	            "keypress(1)": "1",
+				"keypress(2)": "2",
+				"keypress(3)": "3",
+				"keypress(4)": "4",
+				"keypress(5)": "5",
+				"keypress(6)": "6",
+				"keypress(7)": "7",                 
+            },
+            "title": "Question", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "Question.bmp" +"'></div></main>" 
+          },                                                   
         ]
       } 
     },
