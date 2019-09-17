@@ -40,7 +40,7 @@
 	// i.e., loop through the data source, adding each item to named properties
 
 		//this is the list of parameters that we are going to end up with for every "trial" sequence
-		trialProps=["list","strip","conditionPattern","Condition","panel1","panel2","panel3","panel4","panel5","panel6","panel7","panel8"];
+		trialProps=["list","strip","conditionPattern","Condition","panel1","panel2","panel3","panel4","panel5","panel6"];
 
 		trials=[];
 		for (index = 0; index < n_trials; index++) {
@@ -182,23 +182,7 @@ const study = lab.util.fromObject({
             "title": "panel6", //tells us which panel we are using
             "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel6}" +"'></div></main>" 
           },
-	{
-            "type": "lab.html.Screen", //a screen presenting our stimulus
-            "responses": {
-              "keypress(Space)": "continue"
-            },
-            "title": "panel7", //tells us which panel we are using
-            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel7}" +"'></div></main>" 
-          }, 
-
-	{
-            "type": "lab.html.Screen", //a screen presenting our stimulus
-            "responses": {
-              "keypress(Space)": "continue"
-            },
-            "title": "panel8", //tells us which panel we are using
-            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel8}" +"'></div></main>" 
-          },        
+       
           {
             "type": "lab.html.Screen", //a screen presenting the question at the end
             "responses": {
