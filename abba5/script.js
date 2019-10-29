@@ -24,7 +24,7 @@
 	//head down to line 110 where the inner loop template starts
 
 //TO CHANGE THE SOURCE IMAGES ETC
-	//var URL_stem = "https://vislanglab.github.io/abba3/img/"; //location of the stimuli, URL or...
+	//var URL_stem = "https://vislanglab.github.io/abba5/img/"; //location of the stimuli, URL or...
 	var URL_stem = "img/"; //location of the stimuli, relative path to this file
 
 	//Deal with counterbalancing etc and re-configure so that we can use in lab.js template
@@ -80,7 +80,7 @@ const study = lab.util.fromObject({
     }
   ],
   "metadata": { //strings describing the study
-    "title": "ABBA3",
+    "title": "ABBA5",
     "description": "",
     "repository": "",
     "contributors": ""
