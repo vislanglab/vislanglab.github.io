@@ -188,7 +188,7 @@ const study = lab.util.fromObject({
               "keypress(Space)": "continue"
             },
             "title": "panel7", //tells us which panel we are using
-            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel5}" +"'></div></main>" 
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel7}" +"'></div></main>" 
           },
           {
             "type": "lab.html.Screen", //a screen presenting our stimulus
@@ -196,7 +196,7 @@ const study = lab.util.fromObject({
               "keypress(Space)": "continue"
             },
             "title": "panel8", //tells us which panel we are using
-            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel6}" +"'></div></main>" 
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel8}" +"'></div></main>" 
           },       
           {
             "type": "lab.html.Screen", //a screen presenting the question at the end
