@@ -18,7 +18,7 @@
 	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><p>Get ready for the next strip!</p></div></main>"
 	
 //CHANGE THE ISI DURATIONS HERE
-	var getReadyDuration = 2000
+	var getReadyDuration = 1000
 
 //TO CHANGE THE SEQUENCE OF EVENTS IN A TRIAL...
 	//head down to line 110 where the inner loop template starts
