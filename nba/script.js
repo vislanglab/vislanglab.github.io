@@ -6,13 +6,13 @@
 //NOTES ON CHANGING!
 
 //TO CHANGE THE INSTRUCTION TEXT edit this
-	//var instructions = "You will now see single panels like in comics or cartoons in a newspaper. Your job is to decide whether something is likely to happen before or after that panel, or if it just shows you the state of that moment. If you think something is more likely to have happened before, press "1". If something is likely to happen after, press "0". If you think it just shows a state at this moment, press the Spacebar."
+	//var instructions = "You will now see single panels like in comics or cartoons in a newspaper. Your job is to decide whether something is likely to happen before or after that panel, or if it just shows you the state of that moment. If you think something is more likely to have happened before, press 1. If something is likely to happen after, press 0. If you think it just shows a state at this moment, press the Spacebar."
 	// To make it prettier, define it within html
 	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
 	"<p>You will now see single panels like in comics or cartoons in a newspaper.</p>"+
 	"<p>Your job is to decide whether something is likely to happen before or after that panel, or if it just shows you the state of that moment.</p>"+
-	"<p>If you think something is more likely to have happened before, <b>press "1"</b>.</p>"+
-	"<p>If something is likely to happen after, <b>press "0"</b>.</p>"+
+	"<p>If you think something is more likely to have happened before, <b>press 1</b>.</p>"+
+	"<p>If something is likely to happen after, <b>press 0</b>.</p>"+
 	"<p>If you think it just shows a state at this moment, <b>press the Spacebar</b>.</p>"+
 	"<p>Please press SPACE when you're ready (you may need to click here with the mouse first!)</p>"+
 	"</div></main>"
