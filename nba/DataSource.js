@@ -414,4 +414,4 @@ var DataSourceE = [
 ];
 
 
-var AllDataSources=[DataSourceA,DataSourceB,DataSourceC,DataSourceD];
+var AllDataSources=[DataSourceA,DataSourceB,DataSourceC,DataSourceD,DataSourceE];
