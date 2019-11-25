@@ -24,7 +24,7 @@
 	//head down to line 110 where the inner loop template starts
 
 //TO CHANGE THE SOURCE IMAGES ETC
-	//var URL_stem = "https://vislanglab.github.io/ec2/img/"; //location of the stimuli, URL or...
+	//var URL_stem = "https://vislanglab.github.io/ec3/img/"; //location of the stimuli, URL or...
 	var URL_stem = "img/"; //location of the stimuli, relative path to this file
 
 	//Deal with counterbalancing etc and re-configure so that we can use in lab.js template
@@ -34,7 +34,7 @@
 	// choose one of the sets at random
 	var DataSource = AllDataSources[Math.floor(Math.random()*AllDataSources.length)];
 
-	var n_trials = 30;//DataSource.length; //length of array gives number of sequences
+	var n_trials = 32;//DataSource.length; //length of array gives number of sequences
 
 	// LAB.JS loop will handle randomisation, but need to transform the DataSource into an object for the trial list
 	// i.e., loop through the data source, adding each item to named properties
@@ -80,7 +80,7 @@ const study = lab.util.fromObject({
     }
   ],
   "metadata": { //strings describing the study
-    "title": "EC2",
+    "title": "EC3",
     "description": "",
     "repository": "",
     "contributors": ""
