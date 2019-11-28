@@ -6,8 +6,7 @@
 //NOTES ON CHANGING!
 
 //TO CHANGE THE INSTRUCTION TEXT edit this
-	//var instructions = "You will now see images and text statements. Your job is to answer the question “Is this true or false?” If you think the statement is true, press 1. If you think the statement is false, press 0. Please press SPACE when you’re ready (you may need to click here with the mouse first!)."
-"
+	//var instructions = "You will now see images and text statements. Your job is to answer the question 'Is this true or false?' If you think the statement is true, press 1. If you think the statement is false, press 0. Please press SPACE when you’re ready (you may need to click here with the mouse first!)."
 	// To make it prettier, define it within html
 	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
 	"<p>You will now see images and text statements.</p>"+
@@ -20,7 +19,7 @@
 	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><p>Get ready for the next strip!</p></div></main>"
 	
 //CHANGE THE ISI DURATIONS HERE
-	var getReadyDuration = 1000
+	var getReadyDuration = 2000
 
 //TO CHANGE THE SEQUENCE OF EVENTS IN A TRIAL...
 	//head down to line 110 where the inner loop template starts
@@ -42,7 +41,7 @@
 	// i.e., loop through the data source, adding each item to named properties
 
 		//this is the list of parameters that we are going to end up with for every "trial" sequence
-		trialProps=["list","item","scenario","InterfaceType","Congruence","InterfaceCode","CongruenceCode,"Text","Stimulus"];
+		trialProps=["list","item","scenario","InterfaceType","Congruence","InterfaceCode","CongruenceCode","Text","Stimulus"];
 
 		trials=[];
 		for (index = 0; index < n_trials; index++) {
@@ -125,7 +124,8 @@ const study = lab.util.fromObject({
             "messageHandlers": {"before:prepare": function anonymous(){ //this is a function which will
 					trialIndex = trialIndex+1;
 					getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
-				"<p>Get ready for the next strip!</p>"+
+				"<p>Get ready for the next one!</p>"+
+				"<p>TRUE = 1 , FALSE = 0</p>"+
 				"<p>This is trial " + trialIndex + " of "+n_trials+"</p>"+
 				"</div></main>"
 					this.parameters.getReadyText = getReadyText
