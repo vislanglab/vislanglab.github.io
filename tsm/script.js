@@ -6,14 +6,16 @@
 //NOTES ON CHANGING!
 
 //TO CHANGE THE INSTRUCTION TEXT edit this
-	//var instructions = "You will now see single panels like in comics or cartoons in a newspaper. Your job is to decide whether something is likely to happen before or after that panel, or if it just shows you the state of that moment. If you think something is more likely to have happened before, press 1. If something is likely to happen after, press 0. If you think it just shows a state at this moment, press the Spacebar."
+	//var instructions = "In the next part of the experiment, you will see a series of comic strips. 
+Your task here is to indicate the duration of time depicted in these strips. You will be asked to indicate your duration judgment on a 9-point scale. 1 on the scale indicates a very short amount of time (the duration of the comic strip). 9 on the scale indicates a relatively long amount of time (the duration of the comic strip). Indicate your chosen duration by pressing 1 to 9 on your keyboard. Please, use your intuitions and do not think too much. Try to use the whole range of the scale."
 	// To make it prettier, define it within html
 	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
-	"<p>You will now see single panels like in comics or cartoons in a newspaper.</p>"+
-	"<p>Your job is to decide whether something is likely to happen before or after that panel, or if it just shows you the state of that moment.</p>"+
-	"<p>If you think something is more likely to have happened before, <b>press 1</b>.</p>"+
-	"<p>If something is likely to happen after, <b>press 0</b>.</p>"+
-	"<p>If you think it just shows a state at this moment, <b>press the Spacebar</b>.</p>"+
+	"<p>In the next part of the experiment, you will see a series of comic strips.</p>"+
+	"<p>Your task here is to indicate the duration of time depicted in these strips. You will be asked to indicate your duration judgment on a 9-point scale.</p>"+
+	"<p>1 on the scale indicates a very short amount of time (the duration of the comic strip).</p>"+
+	"<p>9 on the scale indicates a relatively long amount of time (the duration of the comic strip).</p>"+
+	"<p>Indicate your chosen duration by pressing 1 to 9 on your keyboard. Please, use your intuitions and do not think too much.</p>"+
+	"<p>Try to use the whole range of the scale.</p>"+
 	"<p>Please press SPACE when you're ready (you may need to click here with the mouse first!)</p>"+
 	"</div></main>"
 	//define the get ready text, not currently used because set further down
@@ -26,7 +28,7 @@
 	//head down to line 110 where the inner loop template starts
 
 //TO CHANGE THE SOURCE IMAGES ETC
-	//var URL_stem = "https://vislanglab.github.io/nba/img/"; //location of the stimuli, URL or...
+	//var URL_stem = "https://vislanglab.github.io/tsm/img/"; //location of the stimuli, URL or...
 	var URL_stem = "img/"; //location of the stimuli, relative path to this file
 
 	//Deal with counterbalancing etc and re-configure so that we can use in lab.js template
@@ -42,7 +44,7 @@
 	// i.e., loop through the data source, adding each item to named properties
 
 		//this is the list of parameters that we are going to end up with for every "trial" sequence
-		trialProps=["list","strip","NarrativeCat","EventCat","Stimulus"];
+		trialProps=["list","strip","Number","Size","Event", "Scenario", "Num_Character", "Characters", "Condition"];
 
 		trials=[];
 		for (index = 0; index < n_trials; index++) {
@@ -59,7 +61,7 @@
 // a handler function will run every time the screen is prepared to update this
 	var trialIndex = 0
 	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
-	"<p>Get ready for the next panel!</p>"+
+	"<p>Get ready for the next strip!</p>"+
 	"<p>This is trial " + trialIndex + " of "+n_trials+"</p>"+
 	"</div></main>"
 	
@@ -82,7 +84,7 @@ const study = lab.util.fromObject({
     }
   ],
   "metadata": { //strings describing the study
-    "title": "NBA",
+    "title": "TSM",
     "description": "",
     "repository": "",
     "contributors": ""
@@ -139,9 +141,15 @@ const study = lab.util.fromObject({
           {
             "type": "lab.html.Screen", //a screen presenting our strips
             "responses": {
-              			"keypress(1)": "Before",
-				"keypress(0)": "After",
-				"keypress(Space)": "Neutral",
+              			"keypress(1)": "1",
+				"keypress(2)": "2",
+				"keypress(3)": "3",				
+				"keypress(4)": "4",
+				"keypress(5)": "5",
+				"keypress(6)": "6",
+				"keypress(7)": "7",
+				"keypress(8)": "8",
+				"keypress(9)": "9",
             },
             "title": "Stimulus", //tells us the strip we are analyzing
             "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.Stimulus}" +"'></div></main>" 
