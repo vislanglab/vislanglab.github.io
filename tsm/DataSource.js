@@ -1,4 +1,4 @@
-varDataSourceA=[
+var DataSourceA = [
 ["1","1","Single","Short","Looking","Calvinlookingatplate","2","Calvinandfather","1","CH.1985.11.23_1.1.png"],
 
 ["1","17","Single","Short","Looking","Calvinlookingatnailsontable","2","Cavindandmother","5","CH.1985.12.27_1.1.png"],
@@ -49,7 +49,7 @@ varDataSourceA=[
 ];
 
 
-varDataSourceB=[
+var DataSourceB = [
 ["2","5","Single","Short","Riding","CalvinandHobbesinacart","2","CalvinandHobbes","2","CH.1985.12.03_1.1.png"],
 
 ["2","21","Single","Short","Thinking","CalvinandHobbessittingonarock","2","CalvinandHobbes","6","CH.1986.01.03_1.1.png"],
@@ -100,7 +100,7 @@ varDataSourceB=[
 ];
 
 
-varDataSourceC=[
+var DataSourceC = [
 ["3","9","Single","Short","Looking","Calvinlookingfromtreehouse","2","CalvinandSusie","3","CH.1985.12.06_1.1.png"],
 
 ["3","25","Single","Short","Looking","Calvinandfatheratdiningtable","2","Calvinandfather","7","CH.1986.01.22_1.1.png"],
@@ -151,7 +151,7 @@ varDataSourceC=[
 ];
 
 
-varDataSourceD=[
+var DataSourceD = [
 ["4","13","Single","Short","Watching","Calvinwatchingtv","1","Calvin","4","CH.1985.12.09_1.1.png"],
 
 ["4","29","Single","Short","Reading","CalvinandHobbesreadingbookbehinddesk","2","CalvinandHobbes","8","CH.1986.02.03_1.1.png"],
@@ -202,4 +202,4 @@ varDataSourceD=[
 ];
 
 
-varAllDataSources=[DataSourceA,DataSourceB,DataSourceC,DataSourceD];
+var AllDataSources = [ DataSourceA, DataSourceB, DataSourceC, DataSourceD ];
