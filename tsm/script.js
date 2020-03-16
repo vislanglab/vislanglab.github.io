@@ -6,8 +6,7 @@
 //NOTES ON CHANGING!
 
 //TO CHANGE THE INSTRUCTION TEXT edit this
-	//var instructions = "In the next part of the experiment, you will see a series of comic strips. 
-Your task here is to indicate the duration of time depicted in these strips. You will be asked to indicate your duration judgment on a 9-point scale. 1 on the scale indicates a very short amount of time (the duration of the comic strip). 9 on the scale indicates a relatively long amount of time (the duration of the comic strip). Indicate your chosen duration by pressing 1 to 9 on your keyboard. Please, use your intuitions and do not think too much. Try to use the whole range of the scale."
+	//var instructions = "In the next part of the experiment, you will see a series of comic strips. Your task here is to indicate the duration of time depicted in these strips. You will be asked to indicate your duration judgment on a 9-point scale. 1 on the scale indicates a very short amount of time (the duration of the comic strip). 9 on the scale indicates a relatively long amount of time (the duration of the comic strip). Indicate your chosen duration by pressing 1 to 9 on your keyboard. Please, use your intuitions and do not think too much. Try to use the whole range of the scale."
 	// To make it prettier, define it within html
 	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
 	"<p>In the next part of the experiment, you will see a series of comic strips.</p>"+
@@ -38,7 +37,7 @@ Your task here is to indicate the duration of time depicted in these strips. You
 	// choose one of the sets at random
 	var DataSource = AllDataSources[Math.floor(Math.random()*AllDataSources.length)];
 
-	var n_trials = 80;//DataSource.length; //length of array gives number of sequences
+	var n_trials = 24;//DataSource.length; //length of array gives number of sequences
 
 	// LAB.JS loop will handle randomisation, but need to transform the DataSource into an object for the trial list
 	// i.e., loop through the data source, adding each item to named properties
