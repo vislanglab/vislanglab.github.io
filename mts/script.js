@@ -6,11 +6,11 @@
 //NOTES ON CHANGING!
 
 //TO CHANGE THE INSTRUCTION TEXT edit this
-	//var instructions = "In this experiment you will be reading some short excerpts from the first few issues of the American comic THE SAVAGE DRAGON by Erik Larsen. It is a comic about a superpowered police officer  (Dragon) who fights crime with and against other superpowered characters in Chicago (though in one excerpt here he travels to New York). We simply would like you to read the comic, and then answer some questions afterwards. Please read it carefully enough to be able to answer some questions about the story. Each panel will appear one panel at a time in the layout, and you can press the SPACEBAR on the keyboard to advance to the next panel. We recommend enlarging your window to maximum size so you can view the whole page at a time."
+	//var instructions = "In this experiment you will be reading some short excerpts from the first few issues of the American comic THE SAVAGE DRAGON by Erik Larsen. It is a comic about a superpowered police officer (Dragon) who fights crime with and against other superpowered characters in Chicago (though in one excerpt here he travels to New York). We simply would like you to read the comic, and then answer some questions afterwards. Please read it carefully enough to be able to answer some questions about the story. Each panel will appear one panel at a time in the layout, and you can press the SPACEBAR on the keyboard to advance to the next panel. We recommend enlarging your window to maximum size so you can view the whole page at a time."
 	// To make it prettier, define it within html
 	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
 	"<p>In this experiment you will be reading some short excerpts from the first few issues of the American comic THE SAVAGE DRAGON by Erik Larsen.</p>"+
-	"<p> It is a comic about a superpowered police officer  (Dragon) who fights crime with and against other superpowered characters in Chicago (though in one excerpt here he travels to New York).</p>"+
+	"<p> It is a comic about a superpowered police officer (Dragon) who fights crime with and against other superpowered characters in Chicago (though in one excerpt here he travels to New York).</p>"+
 	"<p>We simply would like you to read the comic, and then answer some questions afterwards.</p>"+
 	"<p>Please read it carefully enough to be able to answer some questions about the story.</p>"+
 	"<p>Each panel will appear one panel at a time in the layout, and you can press the SPACEBAR on the keyboard to advance to the next panel.</p>"+
@@ -37,7 +37,7 @@
 	// choose one of the sets at random
 	var DataSource = AllDataSources[Math.floor(Math.random()*AllDataSources.length)];
 
-	var n_trials = 30;//DataSource.length; //length of array gives number of sequences
+	var n_trials = 107;//DataSource.length; //length of array gives number of sequences
 
 	// LAB.JS loop will handle randomisation, but need to transform the DataSource into an object for the trial list
 	// i.e., loop through the data source, adding each item to named properties
