@@ -6,13 +6,13 @@
 //NOTES ON CHANGING!
 
 //TO CHANGE THE INSTRUCTION TEXT edit this
-	//var instructions = "In this experiment you will be reading some short excerpts from the first few issues of the American comic THE SAVAGE DRAGON by Erik Larsen. It is a comic about a superpowered police officer (Dragon) who fights crime with and against other superpowered characters in Chicago (though in one excerpt here he travels to New York). We simply would like you to read the comic, and then answer some questions afterwards. Please read it carefully enough to be able to answer some questions about the story. Each panel will appear one panel at a time in the layout, and you can press the SPACEBAR on the keyboard to advance to the next panel. We recommend enlarging your window to MAXIMUM size so you can view the whole page at a time."
+	//var instructions = "In this experiment you will be reading some short excerpts from the first few issues of the American comic THE SAVAGE DRAGON by Erik Larsen. It is a comic about a superpowered police officer (Dragon) who fights crime with and against other superpowered characters in Chicago (though in one excerpt here he travels to New York). We simply would like you to read the comic, and then answer some questions afterwards. Please read it at a naturally pace, but carefully enough to be able to answer some questions about the story. Each panel will appear one panel at a time in the layout, and you can press the SPACEBAR on the keyboard to advance to the next panel. We recommend enlarging your window to MAXIMUM size so you can view the whole page at a time."
 	// To make it prettier, define it within html
 	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
 	"<p>In this experiment you will be reading some short excerpts from the first few issues of the American comic THE SAVAGE DRAGON by Erik Larsen.</p>"+
 	"<p> It is a comic about a superpowered police officer (Dragon) who fights crime with and against other superpowered characters in Chicago (though in one excerpt here he travels to New York).</p>"+
 	"<p>We simply would like you to read the comic, and then answer some questions afterwards.</p>"+
-	"<p>Please read it carefully enough to be able to answer some questions about the story.</p>"+
+	"<p>Please read it at a naturally pace, but carefully enough to be able to answer some questions about the story.</p>"+
 	"<p>Each panel will appear one panel at a time in the layout, and you can press the SPACEBAR on the keyboard to advance to the next panel.</p>"+
 	"<p>We recommend enlarging your window to MAXIMUM size so you can view the whole page at a time.</p>"+
 	"<p>Please press SPACE when you're ready (you may need to click here with the mouse first!)</p>"+
