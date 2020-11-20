@@ -34,13 +34,13 @@
 	// choose one of the sets at random
 	var DataSource = AllDataSources[Math.floor(Math.random()*AllDataSources.length)];
 
-	var n_trials = 30;//DataSource.length; //length of array gives number of sequences
+	var n_trials = 32;//DataSource.length; //length of array gives number of sequences
 
 	// LAB.JS loop will handle randomisation, but need to transform the DataSource into an object for the trial list
 	// i.e., loop through the data source, adding each item to named properties
 
 		//this is the list of parameters that we are going to end up with for every "trial" sequence
-		trialProps=["list","strip","conditionPattern","Condition","Framing", "FramingNum","Arousal","Explicit","Established","panel1","panel2","panel3","panel4"];
+		trialProps=["list","strip","conditionPattern","Condition","Framing","FramingNum","Arousal","Explicit","Established","panel1","panel2","panel3","panel4"];
 
 		trials=[];
 		for (index = 0; index < n_trials; index++) {
