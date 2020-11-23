@@ -59,7 +59,7 @@
 	var trialIndex = 0
 	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
 	"<p>Get ready for the next one!</p>"+
-	"<p>This is trial " + trialIndex + " of "+n_trials+"</p>"+
+	"<p>This is trial" + trialIndex + " of "+n_trials+"</p>"+
 	"</div></main>"
 	
 	
@@ -81,7 +81,7 @@ const study = lab.util.fromObject({
     }
   ],
   "metadata": { //strings describing the study
-    "title": "EC4",
+    "title": "ACC",
     "description": "",
     "repository": "",
     "contributors": ""
@@ -138,13 +138,7 @@ const study = lab.util.fromObject({
           {
             "type": "lab.html.Screen", //a screen presenting our stimulus
             "responses": {
-              "keypress(1)": "1",
-				"keypress(2)": "2",
-				"keypress(3)": "3",
-				"keypress(4)": "4",
-				"keypress(5)": "5",
-				"keypress(6)": "6",
-				"keypress(7)": "7",
+              "keypress(Space)": "continue"
             },
             "title": "panel1", //tells us which panel we are using
             "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel1}" +"'></div></main>" 
@@ -152,17 +146,42 @@ const study = lab.util.fromObject({
           {
             "type": "lab.html.Screen", //a screen presenting our stimulus
             "responses": {
-              "keypress(1)": "1",
+              "keypress(Space)": "continue"
+            },
+            "title": "panel2", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel2}" +"'></div></main>" 
+          },     
+          {
+            "type": "lab.html.Screen", //a screen presenting our stimulus
+            "responses": {
+              "keypress(Space)": "continue"
+            },
+            "title": "panel3", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel3}" +"'></div></main>" 
+          },
+          {
+            "type": "lab.html.Screen", //a screen presenting our stimulus
+            "responses": {
+              "keypress(Space)": "continue"
+            },
+            "title": "panel4", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel4}" +"'></div></main>" 
+          },
+                 
+          {
+            "type": "lab.html.Screen", //a screen presenting the question at the end
+            "responses": {
+	            "keypress(1)": "1",
 				"keypress(2)": "2",
 				"keypress(3)": "3",
 				"keypress(4)": "4",
 				"keypress(5)": "5",
 				"keypress(6)": "6",
-				"keypress(7)": "7",
+				"keypress(7)": "7",                 
             },
-            "title": "panel2", //tells us which panel we are using
-            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel2}" +"'></div></main>" 
-          },     
+            "title": "Question", //tells us which panel we are using
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "question.bmp" +"'></div></main>" 
+          },    
                   ]
       } 
     },
