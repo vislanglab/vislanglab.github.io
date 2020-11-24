@@ -190,7 +190,7 @@ const study = lab.util.fromObject({
 				"keypress(7)": "7",                 
             },
            "title": "panel5", //tells us which panel we are using
-            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel4}" +"'></div></main>" 
+            "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel5}" +"'></div></main>" 
           },
                                                
         ]
