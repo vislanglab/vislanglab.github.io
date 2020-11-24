@@ -24,7 +24,7 @@
 	//head down to line 110 where the inner loop template starts
 
 //TO CHANGE THE SOURCE IMAGES ETC
-	//var URL_stem = "https://vislanglab.github.io/ec4/img/"; //location of the stimuli, URL or...
+	//var URL_stem = "https://vislanglab.github.io/acc/img/"; //location of the stimuli, URL or...
 	var URL_stem = "img/"; //location of the stimuli, relative path to this file
 
 	//Deal with counterbalancing etc and re-configure so that we can use in lab.js template
@@ -180,8 +180,8 @@ const study = lab.util.fromObject({
             },
             "title": "Question", //tells us which panel we are using
             "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "question.bmp" +"'></div></main>" 
-          },                                                   
-        ]
+          },    
+                  ]
       } 
     },
     {

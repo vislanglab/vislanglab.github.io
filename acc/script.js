@@ -35,13 +35,13 @@
 	// choose one of the sets at random
 	var DataSource = AllDataSources[Math.floor(Math.random()*AllDataSources.length)];
 
-	var n_trials = 125;//DataSource.length; //length of array gives number of sequences
+	var n_trials = 45;//DataSource.length; //length of array gives number of sequences
 
 	// LAB.JS loop will handle randomisation, but need to transform the DataSource into an object for the trial list
 	// i.e., loop through the data source, adding each item to named properties
 
 		//this is the list of parameters that we are going to end up with for every "trial" sequence
-		trialProps=["List","scenario","root","text","stimtype","type","carriertype","ST","T","CT","Humanness","panel1","panel2"];
+		trialProps=["list","scenario","root","text","stimtype","type","carriertype","ST","T","CT","Humanness","panel1","panel2"];
 
 		trials=[];
 		for (index = 0; index < n_trials; index++) {
@@ -59,7 +59,7 @@
 	var trialIndex = 0
 	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
 	"<p>Get ready for the next one!</p>"+
-	"<p>This is trial" + trialIndex + " of "+n_trials+"</p>"+
+	"<p>This is trial " + trialIndex + " of "+n_trials+"</p>"+
 	"</div></main>"
 	
 	
@@ -144,7 +144,7 @@ const study = lab.util.fromObject({
 				"keypress(4)": "4",
 				"keypress(5)": "5",
 				"keypress(6)": "6",
-				"keypress(7)": "7",
+				"keypress(7)": "7",  
             },
             "title": "panel1", //tells us which panel we are using
             "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel1}" +"'></div></main>" 
@@ -158,13 +158,14 @@ const study = lab.util.fromObject({
 				"keypress(4)": "4",
 				"keypress(5)": "5",
 				"keypress(6)": "6",
-				"keypress(7)": "7",
+				"keypress(7)": "7",  
             },
             "title": "panel2", //tells us which panel we are using
             "content": "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><img src='" + URL_stem + "${parameters.panel2}" +"'></div></main>" 
           },     
-   
-        ]
+                           
+        
+                  ]
       } 
     },
     {
