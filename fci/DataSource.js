@@ -18,7 +18,7 @@ var DataSourceA = [
 ["1","17","ElephantTreading","1","Low","17ElephantL.jpg","17ElephantLaa.jpg","17ElephantLae.jpg","17ElephantLea.jpg","17ElephantLee.jpg"],
 ["1","18","ExtremeHunger","4","High","18HungerT.jpg","18HungerTaa.jpg","18HungerTae.jpg","18HungerTea.jpg","18HungerTee.jpg"],
 ["1","19","ExtremeSleep","3","MediumHigh","19SleepMT.jpg","19SleepMTaa.jpg","19SleepMTae.jpg","19SleepMTea.jpg","19SleepMTee.jpg"],
-["1","20","WrongMedication","2","MediumLow","20MedicationLM.jpg","20MedicationLMaa.jpg","20MedicationLMae.jpg","20MedicationLMea.jpg","20MedicationLMee.jpg"],
+["1","20","WrongMedication","2","MediumLow","20MedicationML.jpg","20MedicationMLaa.jpg","20MedicationMLae.jpg","20MedicationMLea.jpg","20MedicationMLee.jpg"],
 ["1","21","Electrification","1","Low","21ElectrificationL.jpg","21ElectrificationLaa.jpg","21ElectrificationLae.jpg","21ElectrificationLea.jpg","21ElectrificationLee.jpg"],
 ["1","22","Gunshot","4","High","22GunT.jpg","22GunTaa.jpg","22GunTae.jpg","22GunTea.jpg","22GunTee.jpg"],
 ["1","23","HotairBalloonFall","3","MediumHigh","23BalloonMT.jpg","23BalloonMTaa.jpg","23BalloonMTae.jpg","23BalloonMTea.jpg","23BalloonMTee.jpg"],
