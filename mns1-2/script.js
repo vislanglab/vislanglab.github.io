@@ -6,7 +6,7 @@
 //NOTES ON CHANGING!
 
 //TO CHANGE THE INSTRUCTION TEXT edit this
-	//var instructions = "Welcome back! In this session, you will again see several comic strips like the ones you might see in a newspaper. Your job is to read them and decide whether you had seen these strips in the previous session. For each one, you will answer whether you think that you had seen that same strip before (YES/NO) and how confident you are about your decision. For each response, please press a number on the keyboard as indicated by the screen.Please press the space bar when you're ready."
+	//var instructions = "Welcome back! In this session, you will again see several comic strips like the ones you might see in a newspaper. Your job is to read them and decide whether you had seen these strips in the previous session. For each one, you will answer whether you think that you had seen that same strip before (YES/NO) and how confident you are about your decision (e.g., if you said "No, I did not see the given sequence before", then rate how confident you are that you did not see it). For each response, please press a number on the keyboard as indicated by the screen.Please press the space bar when you're ready."
 	// To make it prettier, define it within html
 	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
 	"<p>Welcome back! In this session, you will again see several comic strips like the ones you might see in a newspaper.</p>"+
