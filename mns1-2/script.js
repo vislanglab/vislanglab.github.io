@@ -12,6 +12,7 @@
 	"<p>Welcome back! In this session, you will again see several comic strips like the ones you might see in a newspaper.</p>"+
 	"<p>Your job is to read them and decide whether you had seen these strips in the previous session.</p>"+
 	"<p>For each one, you will answer whether you think that you had seen that same strip before (YES/NO) and how confident you are about your decision.</p>"+
+	"<p>If you said "No, I did not see the given sequence before", then rate how confident you are that you did <i>not</i> see it.</p>"+
 	"<p>For each response, please press a number on the keyboard as indicated by the screen.</p>"+
 	"<p>Please press SPACE when you're ready to proceed to the experiment (you may need to click here with the mouse first!)</p>"+
 	"</div></main>"
