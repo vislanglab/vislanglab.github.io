@@ -221,8 +221,26 @@ const study = lab.util.fromObject({
   ]
 })
 
+
+
 // Add data storage support
 study.options.datastore = new lab.data.Store()
 
+
 // Let's go!
 study.run()
+
+const data = event.data.json
+console.log(data.length)
+
+//could split data here if it is really big
+
+if (data.length>49000) { //data is more than 49k
+ 
+d = data.slice(0,49000)
+o1 = data.slice(49000)
+
+Qualtrics.SurveyEngine.setEmbeddedData('labjs-data', d)
+Qualtrics.SurveyEngine.setEmbeddedData('overflow1', o1)  
+ 
+ }
