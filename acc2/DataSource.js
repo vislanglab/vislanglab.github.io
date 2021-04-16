@@ -119,12 +119,11 @@ var DataSourceA=[
 ["1","77","ugly.jpg","ugly","word","6","ugly.jpg"],
 ["1","78","weird.jpg","weird","word","6","weird.jpg"],
 ["1","79","wild.jpg","wild","word","6","wild.jpg"],
-["1","80","wonderful.jpg","wonderful","word","6","wonderful.jpg"],
 ["1","81","filler1.jpg","filler","question","7","filler1.jpg"],
 ["1","82","filler2.jpg","filler","question","7","filler2.jpg"],
 ["1","83","filler3.jpg","filler","question","7","filler3.jpg"],
 ["1","84","filler4.jpg","filler","question","7","filler4.jpg"],
-["1","85","filler5.jpg","filler","question","7","filler5.jpg"],
+["1","85","filler5.jpg","filler","question","7","filler5.jpg"]
 ];
 
 var DataSourceB=[
@@ -247,11 +246,12 @@ var DataSourceB=[
 ["2","57","ideal.jpg","ideal","word","6","ideal.jpg"],
 ["2","58","impressive.jpg","impressive","word","6","impressive.jpg"],
 ["2","59","interesting.jpg","interesting","word","6","interesting.jpg"],
+["2","80","wonderful.jpg","wonderful","word","6","wonderful.jpg"],
 ["2","81","filler1-k.jpg","filler","question","7","filler1-k.jpg"],
 ["2","82","filler2-k.jpg","filler","question","7","filler2-k.jpg"],
 ["2","83","filler3-k.jpg","filler","question","7","filler3-k.jpg"],
 ["2","84","filler4-k.jpg","filler","question","7","filler4-k.jpg"],
-["2","85","filler5-k.jpg","filler","question","7","filler5-k.jpg"],
+["2","85","filler5-k.jpg","filler","question","7","filler5-k.jpg"]
 ];
 
 
