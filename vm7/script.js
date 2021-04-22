@@ -10,7 +10,7 @@
 	// To make it prettier, define it within html
 	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
 	"<p>In dit experiment krijg je steeds twee schermen te zien met daarop ofwel een woord ofwel een afbeelding.</p>"+
-	"<p>Het is jouw taak om te beslissen of de afbeelding of het woord op het scherm overeenkomt met de betekenis van datgene op het vorige scherm."</p>"+
+	"<p>Het is jouw taak om te beslissen of de afbeelding of het woord op het scherm overeenkomt met de betekenis van datgene op het vorige scherm.</p>"+
 	"<p>Op het toetsenbord druk je op 1 (JA) als het overeenkomt en 0 (NEE) als het niet overeenkomt.</p>"+
 	"<p> Druk op de spatiebalk wanneer je klaar bent om te beginnen.(je moet eerst misschien even met de muis klikken op dit scherm!)</p>"+
 	"</div></main>"
