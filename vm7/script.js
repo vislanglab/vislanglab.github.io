@@ -57,8 +57,8 @@
 // a handler function will run every time the screen is prepared to update this
 	var trialIndex = 0
 	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
-	"<p>Get ready for the next one!</p>"+
-	"<p>This is trial " + trialIndex + " of "+n_trials+"</p>"+
+	"<p>Maak je klaar voor de volgende!</p>"+
+	"<p>Trial " + trialIndex + " of "+n_trials+"</p>"+
 	"</div></main>"
 	
 	
@@ -122,8 +122,8 @@ const study = lab.util.fromObject({
             "messageHandlers": {"before:prepare": function anonymous(){ //this is a function which will
 					trialIndex = trialIndex+1;
 					getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
-				"<p>Get ready for the next one!</p>"+
-				"<p>This is trial " + trialIndex + " of "+n_trials+"</p>"+
+				"<p>Maak je klaar voor de volgende!</p>"+
+				"<p>Trial " + trialIndex + " of "+n_trials+"</p>"+
 				"</div></main>"
 					this.parameters.getReadyText = getReadyText
 					//console.log("hello")
