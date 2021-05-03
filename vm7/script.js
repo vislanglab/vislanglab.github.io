@@ -162,7 +162,7 @@ const study = lab.util.fromObject({
       "responses": {},
       "messageHandlers": {},
       "title": "Bye",
-      "content": "Ending the experiment! This should time out automatically...",
+      "content": "You're done with this part, and it should time out automatically. If not, please press Continue...",
       "timeout": "100",
       "datacommit": false
     }
