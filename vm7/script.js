@@ -80,7 +80,7 @@ const study = lab.util.fromObject({
     }
   ],
   "metadata": { //strings describing the study
-    "title": "VM3",
+    "title": "VM7",
     "description": "",
     "repository": "",
     "contributors": ""
