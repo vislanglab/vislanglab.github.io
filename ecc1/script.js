@@ -8,10 +8,11 @@
 //TO CHANGE THE INSTRUCTION TEXT edit this
 	//var instructions = "Choose the entity..."
 	// To make it prettier, define it within html
-	var instructions = "<img src=img/ecc1_instructions.jpg>"
+	var instructions = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'>"+
+	"<p>Please press SPACE when you're ready (you may need to click here with the mouse first!)</p>"+
+	"</div></main>"
 	//define the get ready text, not currently used because set further down
-	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><p>Get ready for the next one!</p></div></main>"
-	
+	var getReadyText = "<main class='content-vertical-center content-horizontal-center'><div style='text-align:center;'><p>Get ready for the next strip!</p></div></main>"
 //CHANGE THE ISI DURATIONS HERE
 	var getReadyDuration = 1000
 
